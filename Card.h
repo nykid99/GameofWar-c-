@@ -6,7 +6,11 @@ using namespace std;
 
 class Card{
 public:
+  Card();
+  Card(string s, int r, bool f);
+  ~Card();
   string suit = "";
   int rank = 0;
-  bool face = NULL; //True is up False is down
+  bool face = false; //True is up False is down
+  void printCard();
 };
